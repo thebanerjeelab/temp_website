@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Banerjee Lab</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/full-width-pics.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Banerjee Lab</a> <!-- Banerjee Lab Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+		<!-- Home -->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+		  <!-- Research -->
+          <li class="nav-item">
+            <a class="nav-link" href="Research.html">Research</a>
+          </li>
+		  <!-- People -->
+          <li class="nav-item">
+            <a class="nav-link" href="People.html">People</a>
+          </li>
+		  <!-- Collaborations 
+		  <li class="nav-item">
+            <a class="nav-link" href="Collaborations.html">Collaborations</a>
+          </li>-->
+		  <!-- Publications -->
+		  <li class="nav-item">
+            <a class="nav-link" href="Publications.html">Publications</a>
+          </li>
+		  <!-- Lab News -->
+		  <li class="nav-item">
+            <a class="nav-link" href="Lab_News.html">Lab News</a>
+          </li>
+		  <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header - set the background image for the header in the line below -->
+  <header><!--class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');"-->
+    <center>
+		<img class="mySlides" src="img/stack_gif.gif" alt="stack" style="object-fit: cover;width: 70%;height: 500px;padding:15px 0px;"> 
+		<img class="mySlides" src="img/nice.jpg" alt="nice" style="object-fit: cover;width: 70%;height: 500px;padding:15px 0px;"> 
+		<img class="mySlides" src="img/picture2.jpg" alt="blue" style="object-fit: cover;width: 70%;height: 500px;padding:15px 0px;"> 
+		<img class="mySlides" src="img/timelapse.gif" alt="timelapse" style="object-fit: cover;width: 70%;height: 500px;padding:15px 0px;"> 
+		<img class="mySlides" src="img/pretty.jpg" alt="pretty" style="object-fit: cover;width: 70%;height: 500px;padding:15px 0px;"> 
+		<img class="mySlides" src="img/green.jpg" alt="green" style="object-fit: cover;width: 70%;height: 500px;padding:15px 0px;"> 
+	</center>
+  </header>
+
+  <!-- Content section -->
+  <section class="py-5">
+    <div class="container">
+      <h1>Welcome to the Banerjee Lab</h1>
+      <p class="lead">Chemical Engineering and Bioengineering lab in the Swanson School of Engineering at the University of Pittsburgh</p>
+      <p>Our lab is focused on multiple approaches to engineering islets for type 1 and 2 diabetes. We actively conduct research in a variety of fields, including stem cell engineering, organ-on-a-chip, microfluidics, vascularization, hydrogel 3D culture platforms, and bioprinting. </p>
+    </div>
+  </section>
+
+  <!-- Image element - set the background image for the header in the line below 
+  <div class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1081');">-->
+    <!-- Put anything you want here! There is just a spacer below for demo purposes! 
+    <div style="height: 200px;"></div>-->
+  <!--</div>-->
+
+  <!-- Content section  
+  <section class="py-5">
+    <div class="container">
+      <h1>Section Heading</h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+    </div>
+  </section>-->
+  
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Banerjee Lab 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>	<!-- This code is javascript to animate the slideshow -->
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 4000); // Change image every 4 seconds
+	}
+</script>
+  
+</body>
+
+</html>
